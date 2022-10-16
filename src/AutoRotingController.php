@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace AutoRotingController;
 
 use BadMethodCallException;
 use Slim\App;
