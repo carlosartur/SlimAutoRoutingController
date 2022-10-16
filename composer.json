@@ -1,0 +1,24 @@
+{
+    "name": "carlosartur/slim-auto-routing-controller",
+    "type": "library",
+    "description": "Auto generate routes from class methods on slim framework. ",
+    "keywords": ["router", "controller", "slimframework"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carlos Artur Neubert Gonçalves",
+            "email": "cang.carlos@gmail.com",
+            "homepage": "https://github.com/carlosartur"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ~8.0.0 || ~8.1.0",
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutoRotingController\\": "src/"
+        }
+    }
+}
