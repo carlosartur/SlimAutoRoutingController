@@ -31,12 +31,12 @@ composer require carlosartur/slim-auto-routing-controller
 - To generate a route:
     - Searches on controller the **public** methods which have the word "Action" on it's name, in any part of name.
         - To change the "Action" word to anything else, add a "METHOD_ROUTE_SUFFIX" constant on controller, with another word.
-    - To generate a "GET" action, the method must be the "GET" word.
-    - To generate a "POST" action, the method must be the "POST" word.
-    - To generate a "PUT" action, the method must be the "PUT" word.
-    - To generate a "DELETE" action, the method must be the "DELETE" word.
-    - To generate a "OPTIONS" action, the method must be the "OPTIONS" word.
-    - To generate a "PATCH" action, the method must be the "PATCH" word.
+    - To generate a "GET" action, the method must have the "GET" word inside it's name.
+    - To generate a "POST" action, the method must have the "POST" word inside it's name.
+    - To generate a "PUT" action, the method must have the "PUT" word inside it's name.
+    - To generate a "DELETE" action, the method must have the "DELETE" word inside it's name.
+    - To generate a "OPTIONS" action, the method must have the "OPTIONS" word inside it's name.
+    - To generate a "PATCH" action, the method must have the "PATCH" word inside it's name.
     - If method's name is more than \<verb\>\<suffix\>:
         - Remove http verb and suffix from name;
         - Slugify the remaining string
@@ -153,7 +153,6 @@ To configure each controller individually, some constants can be used:
     ];
 
     /** The argument regexes. The key is it's name. */
-
     public const PARAMETER_VALIDATION_REGEX = [
         "id" => '[0-9]+',
     ];
