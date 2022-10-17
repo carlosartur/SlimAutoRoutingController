@@ -134,26 +134,26 @@ ExampleController::generateRoutes($app);
 To configure each controller individually, some constants can be used:
 
 ```php
-    /** Path prefix, to add a prefix on route */
-    protected const ROUTE_PREFIX = "";
+/** Path prefix, to add a prefix on route */
+protected const ROUTE_PREFIX = "";
 
-    /** To use a fixed path for all routes of a controller */
-    protected const ROUTE_FIXED = "";
+/** To use a fixed path for all routes of a controller */
+protected const ROUTE_FIXED = "";
 
-    /** The route methods has to have this value. All other methods of the class will be ignored */
-    protected const METHOD_ROUTE_SUFFIX = 'Action';
-    
-    /** The prefix of the method used to call route function. You can implement your own callers. */
-    protected const CALL_FUNCTION_PREFIX = "callRouteMethod";
+/** The route methods has to have this value. All other methods of the class will be ignored */
+protected const METHOD_ROUTE_SUFFIX = 'Action';
 
-    /** The argument regexes. The key is it's type. */
-    public const TYPES_REGEX = [
-        "int" => '[0-9]+',
-        "float" => '[+-]?([0-9]*[.])?[0-9]+',
-    ];
+/** The prefix of the method used to call route function. You can implement your own callers. */
+protected const CALL_FUNCTION_PREFIX = "callRouteMethod";
 
-    /** The argument regexes. The key is it's name. */
-    public const PARAMETER_VALIDATION_REGEX = [
-        "id" => '[0-9]+',
-    ];
+/** The argument regexes. The key is it's type. */
+public const TYPES_REGEX = [
+    "int" => '[0-9]+',
+    "float" => '[+-]?([0-9]*[.])?[0-9]+',
+];
+
+/** The argument regexes. The key is it's name. */
+public const PARAMETER_VALIDATION_REGEX = [
+    "id" => '[0-9]+',
+];
 ```
